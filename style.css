@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'FormaDJR-Display';
+  font-weight: 400;
+  src: url('/Fonts/FormaDJRDisplay-Regular-Edu.otf') format('opentype');
+}
+@font-face {
+  font-family: 'FormaDJR-Display';
+  font-weight: 700;
+  src: url('/Fonts/FormaDJRDisplay-Bold-Edu.otf') format('opentype');
+}
+@font-face {
+  font-family: 'FormaDJR-Text';
+  font-weight: 400;
+  src: url('/Fonts/FormaDJRText-Regular-Edu.otf') format('opentype');
+}
+
+body{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'FormaDJR-Text';
+}
+p{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+#container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+#bg-container{
+  position: relative;
+  height: 100vh;
+}
+#background{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  opacity: 85%;
+  pointer-events:none;
+}
+
+#blocs{
+  padding: 15px;
+  position: fixed;
+  height: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bloctxt:first-child{
+  border-top: 1px solid black;
+}
+#header{
+  display: flex;
+  justify-content: space-between;
+}
+#services span{
+  border-radius: 30px;
+  padding: 3px 8px;
+  line-height: 2;
+}
+span.id{
+  background-color: #EABEFF;
+}
+span.edito{
+  background-color: #FFE54B;
+}
+span.web{
+  background-color: #FFA289;
+}
+hr{
+  margin: 0;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+}
+p{
+  padding: 7px 0;
+}
+a{
+  display: flex;
+  justify-content: space-between;
+}
+#contacts a:hover, #projets a:hover {
+    background-color: #D6D6D6;
+}
+
+@media only screen and (max-width: 1000px) {
+  #container{
+    display: block;
+  }
+  #bg-container{
+    z-index: 1;
+    pointer-events: none;
+  }
+  #background{
+    opacity: 70%;
+  }
+  #blocs{
+    width: calc(100% - 30px);
+  }
+  #contenu{
+    position: absolute;
+    top: 0;
+  }
+}
