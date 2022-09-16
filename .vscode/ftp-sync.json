@@ -1,5 +1,5 @@
 {
-    "remotePath": "/www",
+    "remotePath": "./www",
     "host": "ftp.cluster021.hosting.ovh.net",
     "username": "josephclyr",
     "password": "QFnrNw68r62n",
