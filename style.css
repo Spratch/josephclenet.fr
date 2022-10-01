@@ -9,6 +9,7 @@ body{
   height: 100%;
   width: 100%;
   font-family: 'FormaDJR-Text';
+  overflow: hidden;
 }
 p{
   margin: 0;
@@ -92,7 +93,7 @@ a{
   #blocs{
     width: calc(100% - 30px);
   }
-  #contenu{
+  #content{
     position: absolute;
     top: 0;
   }
