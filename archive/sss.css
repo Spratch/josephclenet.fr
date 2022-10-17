@@ -1,0 +1,44 @@
+/*Typos*/
+/*Suisse Intl*/
+@font-face {
+  font-family: 'suisse_intlregular';
+  src: url('http://josephclenet.fr/Fonts/SuisseIntl-Regular-WebXL.woff2') format('woff2'),
+       url('http://josephclenet.fr/Fonts/SuisseIntl-Regular-WebXL.woff') format('woff'),
+       url('http://josephclenet.fr/Fonts/SuisseIntl-Regular-WebXL.svg#suisse_intlregular') format('svg'),
+       url('http://josephclenet.fr/Fonts/SuisseIntl-Regular-WebXL.ttf') format('truetype')
+       url('http://josephclenet.fr/Fonts/SuisseIntl-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'suisse_intlmedium';
+  src: url('http://josephclenet.fr/Fonts/SuisseIntl-Medium-WebXL.woff2') format('woff2'),
+       url('http://josephclenet.fr/Fonts/SuisseIntl-Medium-WebXL.woff') format('woff'),
+       url('http://josephclenet.fr/Fonts/SuisseIntl-Medium-WebXL.svg#suisse_intlmedium') format('svg'),
+       url('http://josephclenet.fr/Fonts/SuisseIntl-Medium-WebXL.ttf') format('truetype'),
+       url('http://josephclenet.fr/Fonts/SuisseIntl-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Suisse Works*/
+@font-face {
+  font-family: 'suisse_worksbook';
+  src: url('http://josephclenet.fr/Fonts/SuisseWorks-Book-WebXL.woff2') format('woff2'),
+       url('http://josephclenet.fr/Fonts/SuisseWorks-Book-WebXL.woff') format('woff'),
+       url('http://josephclenet.fr/Fonts/SuisseWorks-Book-WebXL.svg#suisse_worksbook') format('svg'),
+       url('http://josephclenet.fr/Fonts/SuisseWorks-Book-WebXL.ttf') format('truetype'),
+       url('http://josephclenet.fr/Fonts/SuisseWorks-Book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'suisse_worksregular';
+  src: url('http://josephclenet.fr/Fonts/SuisseWorks-Regular-WebXL.woff2') format('woff2'),
+       url('http://josephclenet.fr/Fonts/SuisseWorks-Regular-WebXL.woff') format('woff'),
+       url('http://josephclenet.fr/Fonts/SuisseWorks-Regular-WebXL.svg#suisse_worksregular') format('svg'),
+       url('http://josephclenet.fr/Fonts/SuisseWorks-Regular-WebXL.ttf') format('truetype'),
+       url('http://josephclenet.fr/Fonts/SuisseWorks-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,14 +1,16 @@
 @font-face {
-  font-family: 'FormaDJR-Text';
-  font-weight: 400;
-  src: url('/Fonts/FormaDJRText-Regular-Edu.otf') format('opentype');
+  src: url('Fonts/FormaDJRText-Regular.woff2') format("woff2"),
+       url('Fonts/FormaDJRText-Regular.woff') format("woff");
+  font-family: 'FormaDJRText';
+  font-style: normal;
+  font-weight: normal;
 }
 
 body{
   margin: 0;
   height: 100%;
   width: 100%;
-  font-family: 'FormaDJR-Text';
+  font-family: 'FormaDJRText';
   overflow: hidden;
 }
 p{
