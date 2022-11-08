@@ -1,0 +1,113 @@
+@font-face {
+    src: url('Fonts/FormaDJRText-Regular.woff2') format("woff2"),
+         url('Fonts/FormaDJRText-Regular.woff') format("woff");
+    font-family: 'FormaDJRText';
+    font-style: normal;
+    font-weight: normal;
+}
+:root{
+    --gap: calc(100% / 18);
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body{
+    margin: 0;
+    font-size: 10.5pt;
+}
+body{
+    width: 210mm;
+    height: 297mm;
+    padding: 10mm;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    background-color: white;
+}
+h1, h2, h3, p{
+    font-family: 'FormaDJRText';
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: .02rem;
+    
+}
+h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+}
+h3{
+    margin-bottom: .2rem;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+:not(header)>a>*::after, p a::after{
+    content: '\00a0↗';
+    font-family: system-ui;
+    font-size: x-small;
+}
+
+
+header>*{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: .5mm 0;
+}
+
+body>*>*:not(#infos){
+    border-top: 1px solid black;
+    padding-top: .5rem;
+}
+
+#left, #right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.exp, .edu, .skills1, .side-project{
+    margin: 2rem 0 0 0;
+    display: flex;
+    gap: var(--gap);
+}
+
+.year, .name{
+    width: 30px;
+}
+
+.duration{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1px 6px;
+    line-height: 2rem;
+    font-size: .8rem;
+}
+.projects{
+    margin-top: .2rem;
+    padding: .2rem 0 0 1.2rem;
+    border-left: 1px solid black;
+}
+.projects span{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 1px 3px;
+    line-height: 1.5rem;
+    font-size: .8rem;
+}
+.skills2 span{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1px 6px;
+    line-height: 1.5rem;
+    font-size: .8rem;
+}
