@@ -5,8 +5,10 @@
     font-style: normal;
     font-weight: normal;
 }
+
+/* GENERAL */
 :root{
-    --gap: calc(100% / 18);
+    --gap: 0;
 }
 html {
     box-sizing: border-box;
@@ -17,28 +19,38 @@ html {
 
 html, body{
     margin: 0;
-    font-size: 10.5pt;
+    font-size: 9.5pt;
+}
+html{
+    height: 100vh; display: flex;
 }
 body{
+    font-family: 'FormaDJRText';
     width: 210mm;
     height: 297mm;
     padding: 10mm;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--gap);
+    
     background-color: white;
+    box-shadow: 0 0 130px 13px #7450EA;
+    margin: auto auto;
+    border-radius: 15px;
 }
-h1, h2, h3, p{
-    font-family: 'FormaDJRText';
+
+h1, h2, h3, p, li{
     font-size: 1rem;
     font-weight: normal;
     margin: 0;
     letter-spacing: .02rem;
     
 }
-h2{
+h1{
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.3rem;
+    line-height: 1;
+    letter-spacing: .05rem;
+}
+h2{
+    font-size: 1rem;
     line-height: 1;
 }
 h3{
@@ -48,66 +60,128 @@ a{
     text-decoration: none;
     color: inherit;
 }
-:not(header)>a>*::after, p a::after{
+p a::after{
     content: '\00a0↗';
     font-family: system-ui;
     font-size: x-small;
 }
 
 
-header>*{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    border-top: 1px solid black;
-    padding: .5mm 0;
-}
-
-body>*>*:not(#infos){
-    border-top: 1px solid black;
-    padding-top: .5rem;
-}
-
-#left, #right{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.exp, .edu, .skills1, .side-project{
-    margin: 2rem 0 0 0;
-    display: flex;
+/* CONTENT */
+/* Header */
+header{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
     gap: var(--gap);
+    /* align-items: center; */
+    margin-bottom: 7mm;
 }
-
-.year, .name{
+#profilepic{
+    grid-column: 1 / 3;
+    position: relative;
+}
+#profilepic>img{
+    width: 100%;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 15px 5px rgb(0 0 0 / 30%);
+}
+#profilepic::after{
+    content: "";
+    position: absolute;
+    background: url(oc.jpeg);
+    background-size: cover;
+    border-radius: 50%;
     width: 30px;
+    height: 30px;
+    right: 0%;
+    bottom: 0%;
+    border: 2px solid white;
+}
+#infos{
+    grid-column: 4 / 9;
+}
+#name{
+    margin-bottom: 5px;
+}
+#title{
+    margin-bottom: 2px;
+}
+#args{
+    font-size: .8rem;
+    line-height: .9rem;
+    letter-spacing: .03rem;    
+}
+#contacts{
+    grid-column: 10 / 16;
 }
 
-.duration{
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 1px 6px;
-    line-height: 2rem;
+/* Main */
+section{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    gap: var(--gap);
+    margin-bottom: 7mm;
+    
+    border-top: 1px solid rgb(0 0 0 / 30%);
+    padding-top: 2mm;
+}
+section h2{
+    grid-column: 1 / 4;
+}
+.articles{
+    grid-column: 4 / 16;
+}
+article{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--gap);
+    margin: 0;
+}
+:is(#devExp, #education) article:not(:first-child){
+    border-top: 1px solid rgb(0 0 0 / 10%);
+    padding: 2mm 0;
+}
+.year{
     font-size: .8rem;
+    opacity: .7;
+}
+.datas{
+    grid-column: 1 / 6;
 }
 .projects{
-    margin-top: .2rem;
-    padding: .2rem 0 0 1.2rem;
-    border-left: 1px solid black;
+    grid-column: 7 / 13;
 }
-.projects span{
-    /* border: 1px solid black; */
-    border-radius: 10px;
-    padding: 1px 3px;
-    line-height: 1.5rem;
+#workExp .datas{
+    grid-column: span 4;
+}
+
+.skills1{
+    grid-template-columns: repeat(12, 1fr);
+}
+.skills2{
+    grid-column: span 3;
+}
+ul li{
+    list-style: none;
+    padding-bottom: .5rem;
     font-size: .8rem;
 }
-.skills2 span{
+ul{
+    margin: 0;
+    padding: 0;
+}
+.projects span, .skills2 span{
     border: 1px solid black;
     border-radius: 10px;
-    padding: 1px 6px;
+    padding: 1px 5px;
     line-height: 1.5rem;
     font-size: .8rem;
+}
+#side-projects .datas{
+    grid-column: span 4;
+}
+h1, .position, .degree{
+    color: #7450EA;
 }
