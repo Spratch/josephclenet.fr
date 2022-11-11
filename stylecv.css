@@ -30,10 +30,10 @@ body{
     height: 297mm;
     padding: 9mm;
     
-    background-color: white;
+    /* background-color: white;
     box-shadow: 0 0 130px 13px #7450EA;
     margin: auto auto;
-    border-radius: 15px;
+    border-radius: 15px; */
 }
 
 h1, h2, h3, p, li{
