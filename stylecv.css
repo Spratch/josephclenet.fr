@@ -108,9 +108,10 @@ header{
     margin-bottom: 2px;
 }
 #args{
-    font-size: .8rem;
-    line-height: .9rem;
-    letter-spacing: .03rem;    
+    font-size: .9rem;
+    line-height: 1rem;
+    letter-spacing: .03rem;
+    padding-top: .7rem;
 }
 #contacts{
     grid-column: 10 / 16;
@@ -128,6 +129,7 @@ section{
 }
 section h2{
     grid-column: 1 / 4;
+    /* font-size: 1.2rem; */
 }
 .articles{
     grid-column: 4 / 16;
@@ -159,6 +161,9 @@ article{
 
 .skills1{
     grid-template-columns: repeat(12, 1fr);
+}
+.skills1 h3{
+    color: #7450EA;
 }
 .skills2{
     grid-column: span 3;
