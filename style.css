@@ -100,3 +100,51 @@ a{
     top: 0;
   }
 }
+
+
+/* Page sites */
+.page {
+  margin: auto;
+  width: fit-content;
+  padding: 20px;
+}
+.page h1.page-title, .page th{
+  font-weight: normal;
+}
+.page table {
+  border-collapse: collapse;
+}
+.page thead {
+  border-bottom: 1px solid black;
+}
+.page thead th {
+  padding-bottom: 10px;
+  text-align: left;
+}
+.page tr:first-child td {
+  padding-top: 10px;
+}
+.page tr {
+  border-bottom: 0.5px solid black;
+}
+.page tbody tr:hover {
+  background-color: #7450EA;
+  color: white;
+}
+.page tbody tr:hover a {
+  color: white;
+}
+.page tbody tr:hover .cell-QgES span {
+  border: 1px solid white;
+}
+.page td {
+  padding: 3px 40px 3px 0;
+}
+.cell-QgES span {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1px 5px;
+  line-height: 1.5rem;
+  font-size: .8rem;
+  margin-right: 3px;
+}
