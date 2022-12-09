@@ -21,6 +21,13 @@ html, body{
     margin: 0;
     font-size: 9.5pt;
 }
+footer{
+    display: none;
+}
+
+footer img{
+    width: 95vw ;
+}
 html{
     height: 100vh; display: flex;
 }
@@ -191,4 +198,15 @@ ul{
 }
 h1, .position, .degree{
     color: #7450EA;
+}
+@media screen and (max-width: 670px) {
+    html, body{
+        font-size: 2.2vw;
+    }
+    header, main{
+        display: none;
+    }
+    footer{
+        display: block;
+    }
 }
