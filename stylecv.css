@@ -21,6 +21,11 @@ html, body{
     margin: 0;
     font-size: 9.5pt;
 }
+@media screen and (max-width: 210mm) {
+    html,body{
+        font-size: 1.5vw;
+    }
+}
 footer{
     display: none;
 }
@@ -33,14 +38,31 @@ html{
 }
 body{
     font-family: 'FormaDJRText';
-    width: 210mm;
-    height: 297mm;
-    padding: 9mm;
-    
+    padding: 3vw;
+    transform-origin: top left;
+   
     /* background-color: white;
     box-shadow: 0 0 130px 13px #7450EA;
     margin: auto auto;
     border-radius: 15px; */
+}
+
+@media screen and (min-width: 252mm){
+    body{
+        width: 210mm;
+        height: 297mm;    
+        scale: 1.2;
+    }
+}
+@media screen and (max-width: 600px) {
+    .projects span, .skills2 span{
+        border: none !important;
+        padding: 0 !important;
+        line-height: 1 !important;
+    }
+    #profilepic::after{
+        display: none;
+    }
 }
 
 h1, h2, h3, p, li{
@@ -70,7 +92,10 @@ a{
 p a::after{
     content: '\00a0↗';
     font-family: system-ui;
-    font-size: x-small;
+    font-size: 0.8rem;
+}
+p a:hover{
+    opacity: 60%;
 }
 
 
@@ -198,15 +223,4 @@ ul{
 }
 h1, .position, .degree{
     color: #7450EA;
-}
-@media screen and (max-width: 670px) {
-    html, body{
-        font-size: 2.2vw;
-    }
-    header, main{
-        display: none;
-    }
-    footer{
-        display: block;
-    }
 }
