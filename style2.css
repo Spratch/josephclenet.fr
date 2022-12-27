@@ -14,6 +14,7 @@ body{
   height: 100%;
   width: 100%;
   font-family: 'FormaDJRText';
+  scroll-behavior: smooth;
 }
 p, h1, h2, h3, h4{
   margin: 0;
@@ -345,7 +346,7 @@ body:has(#overlay.visible){
   #header, #links{
     grid-column: 2 / 12;
   }
-  #header p:last-child{
+  #header>p:last-child{
     display: none;
   }
   #links{
@@ -357,16 +358,13 @@ body:has(#overlay.visible){
 }
 @media screen and (max-width: 480px) {
   header{
-    position: relative;
+    position: absolute;
   }
   #header, #links{
     grid-column: 1 / 13;
   }
   #header{
     padding: 10px 15px;
-  }
-  main{
-    padding: 15px;
   }
   .title{
     height: 40vh;
