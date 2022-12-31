@@ -254,14 +254,14 @@ span.web{
 }
 
 /* FOOTER */
-footer{
+footer.page-footer{
   padding: 20px 15px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #F5F5F5;
 }
-footer p{
+footer.page-footer p{
   opacity: 50%;
   font-size: 13px;
 }

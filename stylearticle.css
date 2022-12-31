@@ -133,6 +133,18 @@ article .intro{
 
 article p {
     max-width: 70ch;
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+}
+article footer.article-footer{
+    grid-column: 3 / 11;
+    margin: 100px 0;
+    padding: 50px;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+}
+article footer.article-footer li{
+    list-style: none;
 }
 
 @media screen and (max-width: 480px) {
