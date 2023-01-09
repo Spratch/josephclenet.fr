@@ -9,12 +9,14 @@
 * { 
 	box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   margin: 0;
   height: 100%;
   width: 100%;
   font-family: 'FormaDJRText';
-  scroll-behavior: smooth;
 }
 p, h1, h2, h3, h4{
   margin: 0;
@@ -48,6 +50,7 @@ header{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   justify-items: end;
+  pointer-events: none;
 }
 #header{
   grid-column: 4 / 10;
@@ -64,6 +67,7 @@ header{
   background: rgba(245, 245, 245, 0.5);  
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
   border-radius: 23px;
+  pointer-events: auto;
 }
 #links{
   grid-column: 4 / 10;
