@@ -130,6 +130,7 @@ a{
 .page tbody tr:hover {
   background-color: #7450EA;
   color: white;
+  cursor: pointer;
 }
 .page tbody tr:hover a {
   color: white;
@@ -139,6 +140,10 @@ a{
 }
 .page td {
   padding: 3px 40px 3px 0;
+}
+.cell-title sub {
+  vertical-align: baseline;
+  padding-inline-start: 2px;
 }
 .cell-QgES span {
   border: 1px solid black;
