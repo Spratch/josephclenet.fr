@@ -1,0 +1,98 @@
+.header{
+    position: fixed;
+    padding: 15px;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: end;
+    pointer-events: none;
+    
+    @include medium{
+        justify-items: start;
+    }
+
+    @include x-small{
+        position: absolute;
+    }
+
+    >*{
+        grid-column: 4 / 10;
+        position: relative;
+
+        @include medium{
+            grid-column: 2 / 12;
+        }
+
+        @include x-small{
+            grid-column: 1 / 13;
+        }
+    }
+
+    .header__heading{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+        padding: 20px 25px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background: rgba(245, 245, 245, 0.5);  
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
+        border-radius: 23px;
+        pointer-events: auto;
+
+        @include x-small{
+            padding: 10px 15px;
+        }
+
+        >p:last-child{
+            @include medium{
+                display: none;
+            }
+        }
+    }
+
+    .header__nav{    
+        z-index: 1;
+    
+        pointer-events: none;
+        opacity: 0;
+        translate: 0 -24px;
+    
+        transition: all .3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+        @include medium{
+            visibility: visible;
+            pointer-events: all;
+            opacity: 1;
+            translate: none;        
+        }
+    }
+}
+
+.header__heading:hover ~ .header__nav, .header__nav:hover{
+    pointer-events: all;
+    opacity: 1;
+    translate: 0 0px;
+}
+
+.header__nav>div{
+    margin-top: 10px;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    >p{
+        padding: 6px 15px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background: rgba(245, 245, 245, 0.5);  
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
+        border-radius: 23px;
+    }
+    @include medium{
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,37 @@
+@font-face {
+  src: url('/Fonts/FormaDJRText-Regular.woff2') format("woff2"),
+        url('/Fonts/FormaDJRText-Regular.woff') format("woff");
+  font-family: 'FormaDJRText';
+  font-style: normal;
+  font-weight: normal;
+}
+h1, h2, h3, h4, p{
+    margin: 0;
+    font-weight: normal;
+}
+h1, h3, p{
+  font-size: 16px;
+  @include medium{
+    font-size: 12px;
+  }
+}
+h2{
+  font-size: 35px;
+  @include medium{
+    font-size: 5vw;
+  }
+}
+h4{
+  font-size: 25px;
+  @include medium{
+    font-size: 17px;
+  }
+}
+a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+p a:hover{
+  opacity: 60%;
+}

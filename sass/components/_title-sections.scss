@@ -1,0 +1,39 @@
+.title-section{
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include x-small{
+    height: 40vh;
+  }
+
+  &--short{
+    height: 40vh;
+  }
+
+  &__skills{
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 2;
+    &--red{
+      background-color: $red;
+    }
+    &--purple{
+      background-color: $purple;
+    }
+    &--yellow{
+      background-color: $yellow;
+    }
+
+    @include x-small{
+      padding: 5px 20px;
+    }
+  }
+
+  &__inline-img{
+    width: 100px;
+    translate: 0 2px;  
+  }
+}  

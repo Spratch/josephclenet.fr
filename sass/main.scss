@@ -1,0 +1,14 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/reset";
+@import "./base/typography";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./components/title-sections";
+@import "./components/cards-gallery";
+@import "./components/overlays";
+
+@import "./pages/index";

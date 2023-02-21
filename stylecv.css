@@ -118,7 +118,7 @@ header{
     border: 2px solid white;
     box-shadow: 0 2px 15px 5px rgb(0 0 0 / 30%);
 }
-#profilepic::after{
+#profilepic:not(.no-badge)::after{
     content: "";
     position: absolute;
     background: url(oc.jpeg);

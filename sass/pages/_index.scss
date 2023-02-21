@@ -1,0 +1,62 @@
+/* MAIN */
+main{
+    padding: 100px 15px 15px 15px;
+    z-index: 0;
+}
+
+// Gallery sections
+/* Premier rang */
+/* Dimensions */
+.gallery__intro{
+    grid-column: span 4;
+    aspect-ratio: 1 / 1;
+    /* Placement images */
+    &:nth-child(1) a>*:first-child{
+      translate: -50% -50%;
+      transform-origin: center;
+    }
+    &:nth-child(2) a>*:first-child{
+      translate: -50% -50%;
+      transform-origin: top;
+    }
+    &:nth-child(3) a>*:first-child{
+      translate: -50% -70%;
+      transform-origin: center 70%;
+    }
+  }
+  
+  /* Deuxième rang */
+  .gallery__presentation{
+    &:nth-child(4){
+      grid-column: 1 / 8;
+    }
+    &:nth-child(5){
+      grid-column: 8 / 13;
+    }
+  }
+  
+  /* Troisième rang */
+  .gallery__project{
+    &:nth-child(1){
+      grid-column: 2 / 9;
+      a>*:first-child{
+        translate: -50% -50%;
+        transform-origin: center;
+        object-fit: cover;
+        height: 100%;
+      }
+
+      @include x-small{
+        aspect-ratio: 21 / 9;
+      }
+    }
+    &:nth-child(2){
+      grid-column: span 3;
+      aspect-ratio: 1 / 1;
+      a>*:first-child{
+        translate: -50% -50%;
+        object-fit: cover;
+        height: 100%;
+      }  
+    }
+  }
